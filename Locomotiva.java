@@ -2,8 +2,8 @@ public class Locomotiva extends CarroFerroviario {
     private double pesoMaximo;
     private int vagoesMaximo;
 
-    public Locomotiva(int id, TipoCarro tipo, double pesoMaximo, int vagoesMaximo) {
-        super(id, tipo);
+    public Locomotiva(int id, double pesoMaximo, int vagoesMaximo) {
+        super(id);
         this.pesoMaximo = pesoMaximo;
         this.vagoesMaximo = vagoesMaximo;
     }
@@ -16,5 +16,13 @@ public class Locomotiva extends CarroFerroviario {
         return vagoesMaximo;
     }
 
+    @Override
+    public String toString() {
+        String aux = "Locomotiva " + super.getId() + 
+        "; Peso máximo: " + this.pesoMaximo + 
+        "; Vagões máximo: " + vagoesMaximo;
+
+        return aux;
+    }
 
 }

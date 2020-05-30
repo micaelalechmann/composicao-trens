@@ -1,11 +1,9 @@
 public abstract class CarroFerroviario {
     private int id;
     private Composicao composicao;
-    private TipoCarro tipo;
 
-    public CarroFerroviario(int id, TipoCarro tipo) {
+    public CarroFerroviario(int id) {
         this.id = id;
-        this.tipo = tipo;
         this.composicao = null;
     }
 
@@ -20,8 +18,6 @@ public abstract class CarroFerroviario {
     public int getId() {
         return id;
     }
-
-    public TipoCarro getTipo() {
-        return tipo;
-    }
+    
+    public abstract String toString();
 }
