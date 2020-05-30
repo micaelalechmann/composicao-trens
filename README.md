@@ -5,7 +5,7 @@
  - Micaela Lechmann (20180027)
 
 #### Informações para compilação e execução do sistema:
-Para compilar o sistema, entre no terminal, dentro da pasta principal:
+Para compilar o sistema, entre no terminal, dentro da pasta `/app`:
 ```
     javac App.java
 ```
