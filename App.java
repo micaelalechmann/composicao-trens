@@ -93,8 +93,9 @@ public class App {
                         } else if (opcaoEdicao == 6) {
                             System.out.println("Edição encerrada");
                             j++;
+                        } else {
+                            System.out.println("Opção inválida");
                         }
-                        System.out.println("Opção inválida");
                     } while (j == 0);
                     break;
                 }
@@ -119,6 +120,7 @@ public class App {
                     p.gravaComposicoes();
                     System.out.println("\nFim de programa");
                     i++;
+                    break;
                 }
                 default: {
                     System.out.println("Opção inválida");
